@@ -1,3 +1,5 @@
+<!-- livebook:{"persist_outputs":true} -->
+
 # ESCT: Part 2 - OWASP
 
 ```elixir
@@ -137,6 +139,18 @@ case GradingClient.check_answer(OWASP, 1, result) do
 end
 ```
 
+<!-- livebook:{"output":true} -->
+
+```
+Correct!
+```
+
+<!-- livebook:{"output":true} -->
+
+```
+:ok
+```
+
 <!-- livebook:{"branch_parent_index":3} -->
 
 ## Injection
@@ -261,7 +275,7 @@ _Please change the atom below to the name of the vulnerable package installed in
 
 _HINT: Check the changelogs for each dependency._
 
-<!-- livebook:{"attrs":"eyJzb3VyY2UiOiIjT1dBU1A6MlxuYW5zd2VyID0gXG4gIEtpbm8uSW5wdXQuc2VsZWN0KFwiQW5zd2VyXCIsIFtcbiAgICB7OmVjdG8sIFwiRWN0byB2Mi4yLjJcIn0sXG4gICAgezpueCwgXCJOeCB2MC41LjBcIn0sXG4gICAgezpwbHVnLCBcIlBsdWcgdjEuMjAuMFwifVxuICBdKVxuXG5LaW5vLnJlbmRlcihhbnN3ZXIpXG5cbktpbm8uSW5wdXQucmVhZChhbnN3ZXIpIn0","chunks":null,"kind":"Elixir.GradingClient.GradedCell","livebook_object":"smart_cell"} -->
+<!-- livebook:{"attrs":"eyJzb3VyY2UiOiIjT1dBU1A6MlxuYW5zd2VyID0gXG4gIEtpbm8uSW5wdXQuc2VsZWN0KFwiQW5zd2VyXCIsIFtcbiAgICAjIGh0dHBzOi8vZ2l0aHViLmNvbS9lbGl4aXItZWN0by9lY3RvL2Jsb2IvbWFzdGVyL0NIQU5HRUxPRy5tZFxuICAgICMgaHR0cHM6Ly9naXRodWIuY29tL2VsaXhpci1lY3RvL2VjdG8vYmxvYi92Mi4yL0NIQU5HRUxPRy5tZCN2MjIyLTIwMTctMDktMDlcbiAgICB7OmVjdG8sIFwiRWN0byB2Mi4yLjJcIn0sXG4gICAgIyBodHRwczovL2dpdGh1Yi5jb20vZWxpeGlyLW54L254L2Jsb2IvbWFpbi9ueC9DSEFOR0VMT0cubWQjdjA1MC0yMDIzLTAyLTEwXG4gICAgezpueCwgXCJOeCB2MC41LjBcIn0sXG4gICAgIyBodHRwczovL2dpdGh1Yi5jb20vZWxpeGlyLXBsdWcvcGx1Zy9ibG9iL21haW4vQ0hBTkdFTE9HLm1kXG4gICAgIyBodHRwczovL2dpdGh1Yi5jb20vZWxpeGlyLXBsdWcvcGx1Zy9ibG9iL3YxLjQvQ0hBTkdFTE9HLm1kI3YxMzJcbiAgICB7OnBsdWcsIFwiUGx1ZyB2MS4xOS4zXCJ9XG4gIF0pXG5cbktpbm8ucmVuZGVyKGFuc3dlcilcblxuS2luby5JbnB1dC5yZWFkKGFuc3dlcikifQ","chunks":null,"kind":"Elixir.GradingClient.GradedCell","livebook_object":"smart_cell"} -->
 
 ```elixir
 result =
@@ -270,7 +284,7 @@ result =
       Kino.Input.select("Answer",
         ecto: "Ecto v2.2.2",
         nx: "Nx v0.5.0",
-        plug: "Plug v1.20.0"
+        plug: "Plug v1.19.3"
       )
 
     Kino.render(answer)
@@ -287,6 +301,18 @@ case GradingClient.check_answer(OWASP, 2, result) do
   _ ->
     IO.puts([IO.ANSI.red(), "Incorrect.", IO.ANSI.reset()])
 end
+```
+
+<!-- livebook:{"output":true} -->
+
+```
+Correct!
+```
+
+<!-- livebook:{"output":true} -->
+
+```
+:ok
 ```
 
 <!-- livebook:{"branch_parent_index":3} -->
@@ -417,6 +443,20 @@ case HTTPoison.get(user_inputted_url) do
   {:error, %HTTPoison.Error{reason: reason}} ->
     IO.inspect(reason)
 end
+```
+
+<!-- livebook:{"output":true} -->
+
+```
+This is the IP belonging to your Livebook instance:
+2607:fea8:1421:2910:54be:80ef:2fdb:53d7
+
+```
+
+<!-- livebook:{"output":true} -->
+
+```
+:ok
 ```
 
 [**<- Previous Module: Introduction**](./1-introduction.livemd) || [**Next Module: Secure SDLC Concepts ->**](./3-ssdlc.livemd)
