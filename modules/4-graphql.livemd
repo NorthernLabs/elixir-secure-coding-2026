@@ -1,3 +1,5 @@
+<!-- livebook:{"persist_outputs":true} -->
+
 # ESCT: Part 4 - GraphQL Security
 
 ```elixir
@@ -88,6 +90,18 @@ case GradingClient.check_answer(GRAPHQL, 1, result) do
 end
 ```
 
+<!-- livebook:{"output":true} -->
+
+```
+Correct!
+```
+
+<!-- livebook:{"output":true} -->
+
+```
+:ok
+```
+
 ## Error Disclosure
 
 ### Description
@@ -132,6 +146,18 @@ case GradingClient.check_answer(GRAPHQL, 2, result) do
   _ ->
     IO.puts([IO.ANSI.red(), "Incorrect.", IO.ANSI.reset()])
 end
+```
+
+<!-- livebook:{"output":true} -->
+
+```
+Correct!
+```
+
+<!-- livebook:{"output":true} -->
+
+```
+:ok
 ```
 
 ### Resources
