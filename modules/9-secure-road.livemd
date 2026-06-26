@@ -1,3 +1,5 @@
+<!-- livebook:{"persist_outputs":true} -->
+
 # ESCT: Part 9 - The Secure Road
 
 ```elixir
