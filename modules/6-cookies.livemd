@@ -181,12 +181,12 @@ In the Phoenix Framework, you would use functionality found within the [Plug lib
 
 _Fill out the `put_resp_cookie/4` function arguments with the settings outlined in the previous section, no other code changes should be necessary._
 
-<!-- livebook:{"attrs":"eyJzb3VyY2UiOiIjIENPT0tJRV9TRUNVUklUWToxIFxuXG5jb29raWVfbmFtZSA9IFwiX19Ib3N0LVwiXG5cbiMgVW5jb21tZW50IGFuZCBjaGFuZ2UgdGhlIHB1dF9yZXNwX2Nvb2tpZSBjYWxsIGJlbG93XG5jb25uID1cbiAgUGx1Zy5Db25uLnB1dF9yZXNwX2Nvb2tpZShcbiAgICBjb25uLFxuICAgIGNvb2tpZV9uYW1lLFxuICAgIDw8MDo6OCwgNDI6Ojg+PixcbiAgICBwYXRoOiBcIi9cIixcbiAgICBzZWN1cmU6IHRydWUsXG4gICAgaHR0cF9vbmx5OiB0cnVlLFxuICAgIHNhbWVfc2l0ZTogXCJTdHJpY3RcIlxuICApXG5cbmNvb2tpZSA9IFxuICBjb25uXG4gIHw+IFBsdWcuQ29ubi5mZXRjaF9jb29raWVzKClcbiAgfD4gUGx1Zy5Db25uLmdldF9yZXNwX2Nvb2tpZXMoKVxuICB8PiBNYXAuZmV0Y2ghKGNvb2tpZV9uYW1lKVxuXG57Y29va2llLCBiaW5hcnlfcGFydChjb29raWVfbmFtZSwgMCwgNil9In0","chunks":null,"kind":"Elixir.GradingClient.GradedCell","livebook_object":"smart_cell"} -->
+<!-- livebook:{"attrs":"eyJzb3VyY2UiOiIjIENPT0tJRV9TRUNVUklUWToxIFxuXG5jb29raWVfbmFtZSA9IFwiX19Ib3N0LWJvZ3VzLWNvb2tpZVwiXG5cbiMgVW5jb21tZW50IGFuZCBjaGFuZ2UgdGhlIHB1dF9yZXNwX2Nvb2tpZSBjYWxsIGJlbG93XG5jb25uID1cbiAgUGx1Zy5Db25uLnB1dF9yZXNwX2Nvb2tpZShcbiAgICBjb25uLFxuICAgIGNvb2tpZV9uYW1lLFxuICAgIDw8MDo6OCwgNDI6Ojg+PixcbiAgICBwYXRoOiBcIi9cIixcbiAgICBzZWN1cmU6IHRydWUsXG4gICAgaHR0cF9vbmx5OiB0cnVlLFxuICAgIHNhbWVfc2l0ZTogXCJTdHJpY3RcIlxuICApXG5cbmNvb2tpZSA9IFxuICBjb25uXG4gIHw+IFBsdWcuQ29ubi5mZXRjaF9jb29raWVzKClcbiAgfD4gUGx1Zy5Db25uLmdldF9yZXNwX2Nvb2tpZXMoKVxuICB8PiBNYXAuZmV0Y2ghKGNvb2tpZV9uYW1lKVxuXG57Y29va2llLCBiaW5hcnlfcGFydChjb29raWVfbmFtZSwgMCwgNil9In0","chunks":null,"kind":"Elixir.GradingClient.GradedCell","livebook_object":"smart_cell"} -->
 
 ```elixir
 result =
   (
-    cookie_name = "__Host-"
+    cookie_name = "__Host-bogus-cookie"
 
     conn =
       Plug.Conn.put_resp_cookie(
