@@ -261,7 +261,7 @@ _Please change the atom below to the name of the vulnerable package installed in
 
 _HINT: Check the changelogs for each dependency._
 
-<!-- livebook:{"attrs":"eyJzb3VyY2UiOiIjT1dBU1A6MlxuYW5zd2VyID0gXG4gIEtpbm8uSW5wdXQuc2VsZWN0KFwiQW5zd2VyXCIsIFtcbiAgICB7OmVjdG8sIFwiRWN0byB2Mi4yLjJcIn0sXG4gICAgezpueCwgXCJOeCB2MC41LjBcIn0sXG4gICAgezpwbHVnLCBcIlBsdWcgdjEuMy4yXCJ9XG4gIF0pXG5cbiMgYW5zd2VyID0gUGx1ZyB2MS4zLjJcblxuS2luby5yZW5kZXIoYW5zd2VyKVxuXG5LaW5vLklucHV0LnJlYWQoYW5zd2VyKSJ9","chunks":null,"kind":"Elixir.GradingClient.GradedCell","livebook_object":"smart_cell"} -->
+<!-- livebook:{"attrs":"eyJzb3VyY2UiOiIjT1dBU1A6MlxuYW5zd2VyID0gXG4gIEtpbm8uSW5wdXQuc2VsZWN0KFwiQW5zd2VyXCIsIFtcbiAgICB7OmVjdG8sIFwiRWN0byB2Mi4yLjJcIn0sXG4gICAgezpueCwgXCJOeCB2MC41LjBcIn0sXG4gICAgezpwbHVnLCBcIlBsdWcgdjEuNC4wXCJ9XG4gIF0pXG5cbiMgYW5zd2VyID0gUGx1ZyB2MS4zLjIsIHVwZGF0ZWQgdG8gMS40LjBcblxuS2luby5yZW5kZXIoYW5zd2VyKVxuXG5LaW5vLklucHV0LnJlYWQoYW5zd2VyKSJ9","chunks":null,"kind":"Elixir.GradingClient.GradedCell","livebook_object":"smart_cell"} -->
 
 ```elixir
 result =
@@ -270,7 +270,7 @@ result =
       Kino.Input.select("Answer",
         ecto: "Ecto v2.2.2",
         nx: "Nx v0.5.0",
-        plug: "Plug v1.3.2"
+        plug: "Plug v1.4.0"
       )
 
     Kino.render(answer)
