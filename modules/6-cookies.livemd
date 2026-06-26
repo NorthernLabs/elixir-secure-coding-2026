@@ -1,3 +1,5 @@
+<!-- livebook:{"persist_outputs":true} -->
+
 <!-- livebook:{"file_entries":[{"name":"OptInvsOptOutCookies.png","type":"attachment"}]} -->
 
 # ESCT: Part 6 - Cookie Security
