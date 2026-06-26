@@ -1,3 +1,5 @@
+<!-- livebook:{"persist_outputs":true} -->
+
 # ESCT: Part 7 - Security Anti-Patterns
 
 ```elixir
@@ -73,7 +75,7 @@ Penguin.slide([3, 4, 5, 2, 1])
 
 **What sorting algorithm is the module above using?**
 
-<!-- livebook:{"attrs":"eyJzb3VyY2UiOiIjIEFOVElQQVRURVJOUzoxXG5cbmlucHV0ID0gS2luby5JbnB1dC5zZWxlY3QoXCJBbnN3ZXJcIiwgW1xuICBhOiBcIkJ1YmJsZSBTb3J0XCIsXG4gIGI6IFwiTWVyZ2UgU29ydFwiLFxuICBjOiBcIlF1aWNrIFNvcnRcIixcbiAgZDogXCJSYW5kb20gU29ydFwiXG5dKVxuXG5LaW5vLnJlbmRlcihpbnB1dClcblxuS2luby5JbnB1dC5yZWFkKGlucHV0KSJ9","chunks":null,"kind":"Elixir.GradingClient.GradedCell","livebook_object":"smart_cell"} -->
+<!-- livebook:{"attrs":"eyJzb3VyY2UiOiIjIEFOVElQQVRURVJOUzoxXG5cbmlucHV0ID0gS2luby5JbnB1dC5zZWxlY3QoXCJBbnN3ZXJcIiwgW1xuICBhOiBcIkJ1YmJsZSBTb3J0XCIsXG4gIGI6IFwiTWVyZ2UgU29ydFwiLFxuICBjOiBcIlF1aWNrIFNvcnRcIixcbiAgZDogXCJSYW5kb20gU29ydFwiXG5dKVxuXG4jIGFuc3dlciA9IFwiUXVpY2sgU29ydFwiXG5cbktpbm8ucmVuZGVyKGlucHV0KVxuXG5LaW5vLklucHV0LnJlYWQoaW5wdXQpIn0","chunks":null,"kind":"Elixir.GradingClient.GradedCell","livebook_object":"smart_cell"} -->
 
 ```elixir
 result =
