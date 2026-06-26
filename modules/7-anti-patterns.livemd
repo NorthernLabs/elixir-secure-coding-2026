@@ -1,3 +1,5 @@
+<!-- livebook:{"persist_outputs":true} -->
+
 # ESCT: Part 7 - Security Anti-Patterns
 
 ```elixir
@@ -52,6 +54,12 @@ end
 A.b([3, 4, 5, 2, 1])
 ```
 
+<!-- livebook:{"output":true} -->
+
+```
+[1, 2, 3, 4, 5]
+```
+
 ### <span style="color:blue;">Example</span> - Redux
 
 How about this, same exact function before - but this time with human readable names. Does it make it easier or harder to understand what the function is doing? Technically the code is still obfuscated...
@@ -67,6 +75,12 @@ defmodule Penguin do
 end
 
 Penguin.slide([3, 4, 5, 2, 1])
+```
+
+<!-- livebook:{"output":true} -->
+
+```
+[1, 2, 3, 4, 5]
 ```
 
 ### <span style="color:red;">Quiz</span>
@@ -100,6 +114,18 @@ case GradingClient.check_answer(ANTIPATTERNS, 1, result) do
   _ ->
     IO.puts([IO.ANSI.red(), "Incorrect.", IO.ANSI.reset()])
 end
+```
+
+<!-- livebook:{"output":true} -->
+
+```
+Correct!
+```
+
+<!-- livebook:{"output":true} -->
+
+```
+:ok
 ```
 
 ## Frontend Authorization Checks
