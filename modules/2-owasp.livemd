@@ -1,3 +1,5 @@
+<!-- livebook:{"persist_outputs":true} -->
+
 # ESCT: Part 2 - OWASP
 
 ```elixir
@@ -135,6 +137,18 @@ case GradingClient.check_answer(OWASP, 1, result) do
   _ ->
     IO.puts([IO.ANSI.red(), "Incorrect.", IO.ANSI.reset()])
 end
+```
+
+<!-- livebook:{"output":true} -->
+
+```
+Correct!
+```
+
+<!-- livebook:{"output":true} -->
+
+```
+:ok
 ```
 
 <!-- livebook:{"branch_parent_index":3} -->
@@ -289,6 +303,18 @@ case GradingClient.check_answer(OWASP, 2, result) do
 end
 ```
 
+<!-- livebook:{"output":true} -->
+
+```
+Correct!
+```
+
+<!-- livebook:{"output":true} -->
+
+```
+:ok
+```
+
 <!-- livebook:{"branch_parent_index":3} -->
 
 ## Identification and Authentication Failures
@@ -417,6 +443,20 @@ case HTTPoison.get(user_inputted_url) do
   {:error, %HTTPoison.Error{reason: reason}} ->
     IO.inspect(reason)
 end
+```
+
+<!-- livebook:{"output":true} -->
+
+```
+This is the IP belonging to your Livebook instance:
+127.0.0.1
+
+```
+
+<!-- livebook:{"output":true} -->
+
+```
+:ok
 ```
 
 [**<- Previous Module: Introduction**](./1-introduction.livemd) || [**Next Module: Secure SDLC Concepts ->**](./3-ssdlc.livemd)
